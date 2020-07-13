@@ -1,3 +1,43 @@
+# TCC
+
+TCC
+
+FERRAMENTAS:
+
+FRONT: Angular, NODE.js
+
+BACK: PostGIS, QGIS, PostGRES
+
+
+SOBRE OS MAPAS:
+
+SOBRE UM DOS MAPAS: EPSG:5858 SAD-69 , TAMBEM EXISTE ESPG:29192 - SAD69
+
+Dados tecnicos sobre os arquivos SHAPE:
+
+DATUM: SAD-69/original
+PROJECAO CARTOGRAFICA: UTM-22 (-51o)
+
+OBS.: Devido ao uso do DATUM SAD-69/original por Curitiba,
+para converter para SIRGAS-2000, devem-se utilizar os parametros
+locais de transformacao de coordenadas descritos abaixo:
+
+SAD-69/original(Curitiba) -> SIRGAS-2000
+dX = -66,163 m
+dY = 2,028 m
+dZ = -33,718 m
+
+Dados sobre os arquivos DWG:
+
+O Ippuc e a Prefeitura de Curitiba nao produzem mapas ou bases cadastrais em formato DWG. Os arquivos DWG aqui disponibilizados sao
+resultado de conversao de outros formatos e podem apresentar falhas originadas neste processo.
+
+Esta pagina esta em construcao e permanente atualizacao.
+Os arquivos aqui disponibilizados tem carater meramente informativo.
+O IPPUC nao se responsabiliza por quaisquer prejuizos ou danos causados pela utilizacao da informacao.
+
+Sugestoes, duvidas ou contribuicoes podem ser encaminhados para geoprocessamento@ippuc.org.br
+
 # Elites
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
