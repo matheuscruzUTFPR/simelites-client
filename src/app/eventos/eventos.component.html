@@ -1,0 +1,111 @@
+<h2>Adicionar um evento:</h2>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Adicione o evento</ng-template>
+            <mat-form-field appearance="fill">
+                <mat-label>Rótulo do evento</mat-label>
+                <input type="text" placeholder="e.g. Nascimento" matInput formControlName="firstCtrlRotulo"
+                    [matAutocomplete]="auto" required>
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                        {{option}}
+                    </mat-option>
+                </mat-autocomplete>
+                <mat-hint align="end">Nome do evento</mat-hint>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Data de início do evento</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="firstCtrlDataInicio" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Data do fim do evento</mat-label>
+                <input matInput [matDatepicker]="picker2" formControlName="firstCtrlDataFim">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Fonte do evento</mat-label>
+                <input matInput formControlName="firstCtrlFonte" placeholder="http://wikipedia.org, Fulano (2018)"
+                    required>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="fill">
+                <mat-label>Descricao do evento</mat-label>
+                <textarea formControlName="firstCtrlDescricao" placeholder="Ciclano nasceu muito triste" matInput
+                    required></textarea>
+            </mat-form-field>
+            <br>
+            <mat-label>Nome dos Individuos relacionados ao evento:</mat-label>
+            <mat-form-field appearance="fill">
+                <mat-label>Individuos</mat-label>
+                <mat-select formControlName="firstCtrlIndividuos" multiple>
+                    <mat-option *ngFor="let individuo of individuoLista" [value]="individuo" required>
+                        {{individuo}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <mat-label>Adicione os Campos Sociais que se relacionam ao evento:</mat-label>
+            <mat-form-field appearance="fill">
+                <mat-label>Campos Sociais</mat-label>
+                <mat-select formControlName="firstCtrlCamposSociais" multiple>
+                    <mat-option *ngFor="let campoSocial of campoSocialLista" [value]="campoSocial" required>
+                        {{campoSocial}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperNext>Próximo</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Adicione os campos relacionados</ng-template>
+            <mat-label>Campos:</mat-label>
+            <mat-label *ngFor="let campoSocial of campoSocialLista"> {{campoSocial}}
+            </mat-label>
+            <br>
+
+            <mat-form-field>
+                <mat-label>Papel Social do Indivíduo</mat-label>
+                <input matInput formControlName="secondCtrlPapel" placeholder="Provedor" required>
+            </mat-form-field>
+
+            <div>
+                <button mat-button matStepperPrevious>Voltar</button>
+                <button mat-button matStepperNext>Próximo</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdFormGroup">
+        <form [formGroup]="thirdFormGroup">
+            <ng-template matStepLabel>Adicione os Individuos</ng-template>
+            <mat-form-field>
+                <mat-label>Nome dos Individuos</mat-label>
+                <input matInput formControlName="thirdCtrl" placeholder="Fulano de Ciclano" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperPrevious>Voltar</button>
+                <button mat-button matStepperNext>Próximo</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Salvar</ng-template>
+        <p>Acabou.</p>
+        <div>
+            <button mat-button matStepperPrevious>Voltar</button>
+            <button mat-button (click)="stepper.reset()">Resetar</button>
+            <button mat-button (click)="salvar()">Salvar</button>
+
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>

@@ -1,0 +1,61 @@
+<h2>Para adicionar dados:</h2>
+<span>Ir para aba "Eventos" </span>
+<h2>Conexão com Servidor:</h2>
+<!-- <button mat-button (click)="testaBDAmazon()">Clique em mim para testar conexão na nuvem do Amazon!</button> -->
+<li *ngFor="let obj of home">{{obj | json}}</li>
+<p>
+    <h2>Sobre o banco de dados:</h2>
+    <p>Dados de exemplo retirado de: https://www.kinsources.net/kidarep/dataset-177-familles-bretonnes-xve-xviie-siecles.xhtml </p>
+    <mat-list>
+        <mat-list-item>
+            <h3 matLine> Individuos: 2680</h3>
+            <p matLine>
+                <span> -- Mulheres: 1241</span>
+                <span> -- Homens: 1439</span>
+                <span> -- Não conhecido: 0</span>
+            </p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <h3 matLine> Familias: 1186</h3>
+            <p matLine>
+                <span> -- Número de gerações: 16</span>
+                <span> -- Média Geracional: 1.29</span>
+            </p>
+            <p matLine>
+                <span> -- Uniões: 1099 </span>
+                <span> -- Casamentos: 1072</span>
+                <span> -- Homens não solteiros: 1088</span>
+                <span> -- Mulheres não solteiras: 1000</span>
+            </p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            Campos: 7
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <h3 matLine> Eventos: 7540</h3>
+            <p matLine>
+                <span> -- Evento mais antigo: 13/01/1901</span>
+                <span> -- Evento mais recente: 14/02/2020</span>
+            </p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <h2 matLine> Relações: 6021</h2>
+            <h3 matLine> Relações paternais: 3032</h3>
+
+            <p matLine>
+                <span> -- Relações Pai-Filho: 503</span>
+                <span> -- Relações Pai-Filha: 554</span>
+                <span> -- Relações Mãe-Filho: 560</span>
+                <span> -- Relações Mãe-Filha: 571</span>
+            </p>
+            <p matLine>
+                <span> -- Relações Co-esposa: 91</span>
+                <span> -- Relações Co-marido: 107</span>
+                <span> -- Uniões férteis: 634 (59.14%)</span>
+            </p>
+        </mat-list-item>
+    </mat-list>

@@ -1,0 +1,59 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- Toolbar -->
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button routerLink="/" routerLinkActive="active">
+            <img style="width: 40px" src="../../assets/capivara.png">
+
+        </button>
+        <h1>Protótipo de plataforma</h1>
+        <span class="menu-spacer"></span>
+        <div>
+            <a mat-button [routerLink]="'/mapas'" style="color:inherit;"> Mapas </a>
+            <a mat-button [routerLink]="'/genealogias'" style="color:inherit;"> Genealogias </a>
+            <a mat-button [routerLink]="'/eventos'" style="color:inherit;"> Eventos </a>
+            <a mat-button [routerLink]="'/individuos'" style="color:inherit;"> Individuos </a>
+            <a mat-button [routerLink]="'/campos'" style="color:inherit;"> Campos </a>
+            <a mat-button [routerLink]="'/simulacoes'" style="color:inherit;"> Simulações </a>
+            <a mat-button [routerLink]="'/estatisticas'" style="color:inherit;"> Estatísticas </a>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+<!-- MAIN -->
+
+<div class="content" role="main">
+    <div class="container mt-3">
+        <router-outlet></router-outlet>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>Criado por : Matheus Cruz</p>
+            <p>Email: matheuscruz [email] alunos [dot] utfpr [dot] edu [dot] br</p>
+            <p>Software livre feito sobre Licença: GNU GPLv3.0</p>
+        </div>
+    </footer>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
