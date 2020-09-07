@@ -2,6 +2,8 @@
 
 TCC
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client?ref=badge_shield)
+
 FERRAMENTAS:
 
 FRONT: Angular, NODE.js
