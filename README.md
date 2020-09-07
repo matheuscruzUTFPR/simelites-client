@@ -1,4 +1,6 @@
 # TCC
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client?ref=badge_shield)
+
 
 TCC
 
@@ -65,3 +67,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client?ref=badge_large)
