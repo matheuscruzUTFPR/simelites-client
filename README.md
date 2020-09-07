@@ -6,9 +6,9 @@ TCC
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FmatheuscruzUTFPR%2Fsimelites-client?ref=badge_shield)
 [![Build Status](https://travis-ci.com/matheuscruzUTFPR/simelites-client.svg?branch=master)](https://travis-ci.com/matheuscruzUTFPR/simelites-client)
 
+[![dependencies Status](https://david-dm.org/matheuscruzUTFPR/simelites-client/status.svg)](https://david-dm.org/matheuscruzUTFPR/simelites-client)
 
-<a href="https://david-dm.org/matheuscruzUTFPR/simelites-client"><img src="https://david-dm.org/matheuscruzUTFPR/simelites-client.svg" alt="Dependency Status"></a>
-<a href="https://david-dm.org/matheuscruzUTFPR/simelites-client/?type=dev"><img src="https://david-dm.org/matheuscruzUTFPR/simelites-client/dev-status.svg" alt="devDependency Status"></a>
+[![devDependencies Status](https://david-dm.org/matheuscruzUTFPR/simelites-client/dev-status.svg)](https://david-dm.org/matheuscruzUTFPR/simelites-client?type=dev)
 
 FERRAMENTAS:
 
