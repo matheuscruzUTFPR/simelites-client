@@ -10,6 +10,8 @@ TCC
 
 [![devDependencies Status](https://david-dm.org/matheuscruzUTFPR/simelites-client/dev-status.svg)](https://david-dm.org/matheuscruzUTFPR/simelites-client?type=dev)
 
+[![codecov](https://codecov.io/gh/matheuscruzUTFPR/simelites-client/branch/master/graph/badge.svg)](https://codecov.io/gh/matheuscruzUTFPR/simelites-client)
+
 FERRAMENTAS:
 
 FRONT: Angular, NODE.js
